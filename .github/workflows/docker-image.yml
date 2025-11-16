@@ -25,7 +25,8 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: docassemble
+          images: |
+            name=ghcr.io/vedmaka/docassemble
       -
         name: Verify
         run: |
